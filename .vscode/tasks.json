@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build C++",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Weffc++",
+                "-Werror",
+                "-Wextra",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "${workspaceFolder}/*.cpp",
+                "-o",
+                "${workspaceFolder}/build/Debug/outDebug.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build the current C++ file"
+        }
+    ]
+}

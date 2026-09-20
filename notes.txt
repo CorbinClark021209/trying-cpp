@@ -1,0 +1,25 @@
+Design Process
+    1. Define a goal
+        - Should be only a sentence or two.
+    2. Define requirements
+        - What are the project's constraints/requirements?
+        - "What?" not "how?"
+    3. Define tools, targets & backup plan
+        - Where can it be used?
+        - Who is it for?
+        - Backup to Google Drive or GitHub
+    4. Separate problems
+    5. Determine sequence
+        - In what order do things happen?
+    A. Add commented-out method calls to outline sequence
+    B. Fill out one method at a time
+    C. Test frequently
+    D. Optimize for maintainability
+
+Debugging
+    1. Find the root cause of the problem.
+    2. Understand why the issue is occurring.
+    3. Determine how to fix the issue.
+    4. Repair the issue causing the problem.
+    5. Retest to ensure the problem has been fixed.
+    6. Retest to ensure no new problems have emerged.
