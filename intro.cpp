@@ -65,3 +65,17 @@ void question5_x_4()
 
     std::cout << name1 << " (age " << age1 << ") is " << comparison << " than " << name2 << " (age " << age2 << ").";
 }
+constexpr bool isEven(int n)
+{
+    return (n % 2) == 0;
+}
+void question6_3_2()
+{
+    std::cout << "Enter an integer: ";
+
+    int x {};
+    std::cin >> x;
+
+    std::cout << "The integer " << x << " is " << (isEven(x) ? "EVEN" : "ODD") << ".\n";
+}
+

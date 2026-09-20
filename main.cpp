@@ -4,6 +4,6 @@
 
 int main()
 {
-    question5_x_4();
+    question6_3_2();
     return EXIT_SUCCESS;
 }
