@@ -136,6 +136,12 @@ namespace Questions
     std::cout << "The smaller value is " << smaller << "\n";
     std::cout << "The larger value is " << larger << "\n";
 } // smaller, larger variables die
+    int question7_x_3(int x)
+    {
+        static int total { 0 };
+        total += x;
+        return total;
+    }
 }
 
 
