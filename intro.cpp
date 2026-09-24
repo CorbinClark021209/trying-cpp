@@ -160,6 +160,51 @@ namespace Questions
             return 0;
         }
     }
+    void question8_8_2()
+    {
+        char character = 'a';
+        while (character <= 'z') {
+            std::cout << character << ": " << static_cast<int>(character) << "\n";
+            character++;
+        }
+    }
+    void question8_8_3()
+    {
+        int outer{ 5 };
+        while (outer >= 1)
+        {
+            int inner{ outer };
+            while (inner >= 1)
+            {
+                std::cout << inner << ' ';
+                --inner;
+            }
+
+            std::cout << '\n';
+            --outer;
+        }
+    }
+    void question8_8_4()
+    {
+        int outer{ 1 };
+        while (outer <= 5)
+        {
+            int inner{ 5 };
+            while (inner >= 1)
+            {
+                if (inner > outer) {
+                    std::cout << "  ";
+                }
+                else {
+                    std::cout << inner << ' ';
+                }
+                --inner;
+            }
+
+            std::cout << '\n';
+            ++outer;
+        }
+    }
 }
 
 

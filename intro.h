@@ -12,6 +12,9 @@ namespace Questions
     void question7_3_1();
     int question7_x_3(int x);
     int question8_6_1(int a, int b, char op);
+    void question8_8_2();
+    void question8_8_3();
+    void question8_8_4();
 }
 
 #endif
