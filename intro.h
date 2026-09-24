@@ -15,6 +15,10 @@ namespace Questions
     void question8_8_2();
     void question8_8_3();
     void question8_8_4();
+    void question8_10_1();
+    void question8_10_2();
+    void question8_10_4(int number);
+    void question8_10_5(int number);
 }
 
 #endif

@@ -205,6 +205,51 @@ namespace Questions
             ++outer;
         }
     }
+    void question8_10_1()
+    {
+        for (int i { 0 }; i <= 20; i += 2) {
+            std::cout << i << " ";
+        }
+    }
+    int question8_10_2(int value)
+    {
+        int total { 0 };
+        for (int i { 1 }; i <= value; ++i) {
+            total += i;
+        }
+        return total;
+    }
+    void question8_10_4(int number)
+    {
+        for (int n { 1 }; n <= number; ++n) {
+            if (n % 3 == 0 && n % 5 == 0) {
+                std::cout << "fizzbuzz\n";
+            }
+            else if (n % 3 == 0) {
+                std::cout << "fizz\n";
+            }
+            else if (n % 5 == 0) {
+                std::cout << "buzz\n";
+            }
+            else {
+                std::cout << n << "\n";
+            }
+        }
+    }
+    void question8_10_5(int number)
+    {
+        for (int i { 1 }; i <= number; i++) {
+            if (i % 3 == 0)
+                std::cout << "fizz";
+            if (i % 5 == 0)
+                std::cout << "buzz";
+            if (i % 7 == 0)
+                std::cout << "pop";
+            if (i % 3 != 0 && i % 5 != 0 && i % 7 != 0)
+                std::cout << i;
+            std::cout << "\n";
+        }
+    }
 }
 
 
