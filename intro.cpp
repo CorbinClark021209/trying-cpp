@@ -27,16 +27,16 @@ void multiplyByTwo()
 namespace Questions
 {
     void question5_7_1()
-{
-    std::cout << "Enter your full name: ";
-    std::string name {};
-    std::getline(std::cin >> std::ws, name);
-    std::cout << "Enter your age: ";
-    int age {};
-    std::cin >> age;
-    int nameLen { static_cast<int>(name.length()) }; // get number of chars in name (including spaces)
-    std::cout << "Your age + length of name is: " << age + nameLen << '\n';
-}
+    {
+        std::cout << "Enter your full name: ";
+        std::string name {};
+        std::getline(std::cin >> std::ws, name);
+        std::cout << "Enter your age: ";
+        int age {};
+        std::cin >> age;
+        int nameLen { static_cast<int>(name.length()) }; // get number of chars in name (including spaces)
+        std::cout << "Your age + length of name is: " << age + nameLen << '\n';
+    }
     void question5_x_4()
     {
         std::cout << "Enter the name of person #1: ";
@@ -114,33 +114,51 @@ namespace Questions
         std::cout << "You have " << getQuantityPhrase(numApples) << ' ' << getApplesPluralized(numApples) << ".\n";
     }
     void question7_3_1()
-{
-    std::cout << "Enter an integer: ";
+    {
+        std::cout << "Enter an integer: ";
 
-    int smaller {};
-    std::cin >> smaller;
+        int smaller {};
+        std::cin >> smaller;
 
-    std::cout << "Enter a larger integer: ";
+        std::cout << "Enter a larger integer: ";
 
-    int larger {};
-    std::cin >> larger;
+        int larger {};
+        std::cin >> larger;
 
-    if (smaller > larger) {
-        std::cout << "Swapping the values\n";
+        if (smaller > larger) {
+            std::cout << "Swapping the values\n";
 
-        int swap {larger};
-        larger = smaller;
-        smaller = swap;
-    } // swap variable dies
+            int swap {larger};
+            larger = smaller;
+            smaller = swap;
+        } // swap variable dies
 
-    std::cout << "The smaller value is " << smaller << "\n";
-    std::cout << "The larger value is " << larger << "\n";
-} // smaller, larger variables die
+        std::cout << "The smaller value is " << smaller << "\n";
+        std::cout << "The larger value is " << larger << "\n";
+    } // smaller, larger variables die
     int question7_x_3(int x)
     {
         static int total { 0 };
         total += x;
         return total;
+    }
+    int question8_6_1(int a, int b, char op)
+    {
+        switch (op) {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return a / b;
+        case '%':
+            return a % b;
+        default:
+            std::cout << "calculate(): Unhandled case\n";
+            return 0;
+        }
     }
 }
 
